@@ -1,0 +1,44 @@
+@import "app/sass/_variables.sass"  
+.modal
+	.close
+		position: absolute
+		right: 15px
+		top: 13px	
+		opacity: 1
+	&-backdrop 
+		background: #00437B
+		&.show
+			opacity: .6
+	&-content
+		padding: 40px
+		border-radius: 0
+		border: none
+		font-family: $fontH
+		@media (max-width: $bp-medium)
+			padding: 20px
+	&-title
+		font-family: $fontFL
+		font-size: 40px
+		color: $brand-color	
+		line-height: 1.2	
+		@media (max-width: $bp-medium)
+			font-size: 26px				
+	&-sub-title
+		font-family: $fontFL
+		font-size: 22px
+		color: $brand-color	
+		@media (max-width: $bp-medium)
+			font-size: 18px				
+
+
+
+	
+
+
+
+
+
+
+
+
+	

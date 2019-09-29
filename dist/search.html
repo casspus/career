@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sogaz Career</title>
+
+<link rel="stylesheet" href="css/libs.min.css"> 
+<link rel="stylesheet" href="css/main.css?4"> 
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+
+<div class="header container">
+	<nav class="navbar">
+		<div>
+			<button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-line"></span>
+				<span class="navbar-toggler-line"></span>
+				<span class="navbar-toggler-line"></span>
+			</button>
+			<a class="navbar-brand" href="#">Sogaz Career</a>	
+			<span class="logo-career"></span>		
+		</div>
+		<div class="navbar-search desktop-only">
+			<form action="/search/" class="form-search">
+				<input type="search" name="q" placeholder="Поиск по сайту">
+				<button type="submit" name="s"><i class="ico ico-search-blue"></i></button>
+			</form>					
+		</div>  
+
+		<ul class="navbar-links desktop-only">
+			<li><a href="#"><i class="ico ico-phone"></i><span>Единый номер <strong>8 800 333 0 888</strong></span></a></li>
+			<li><a href="#"><i class="ico ico-message"></i><span>Обращение <br>в СОГАЗ</span></a></li>
+			<li><a href="#" title="Личный кабинет страхователя"><i class="ico ico-user"></i><span><strong>Личный <br>кабинет</strong></span></a></li>	
+		</ul>
+	</nav>
+	<div class="row">
+		<div class="col-lg-12">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#">Вакансии</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Студентам</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">ПРОФЕССИОНАЛАМ</a></li>					
+				<li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Истории успеха</a></li>
+			</ul>					
+		</div>
+	</div>		
+</div>
+<div class="page-bg page-bg-feedback container"></div>
+<div class="container section section-search">
+
+	<div class="section-popup" id="city-choose-popup">
+		<div class="container section-background city-choose">
+			<div class="section-inner">
+				<a href="#" class="close"><i class="ico ico-close-black"></i></a>
+				<h4 class="article-title">Выбор города</h4>	
+				<div class="abc-list">
+					<ul>
+						<li class="mb-10">А</li>
+						<li><a href="#">Абакан</a></li>
+						<li><a href="#">Азов</a></li>
+						<li><a href="#">Александров</a></li>
+						<li><a href="#">Алексин</a></li>
+						<li><a href="#">Альметьевск</a></li>
+						<li><a href="#">Анапа</a></li>
+						<li><a href="#">Ангарск</a></li>
+						<li><a href="#">Анжеро-Судженск</a></li>
+						<li><a href="#">Армавир</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Б</li>
+						<li><a href="#">Балаково</a></li>
+						<li><a href="#">Балахна</a></li>
+						<li><a href="#">Балашиха</a></li>
+						<li><a href="#">Балашов</a></li>
+						<li><a href="#">Барнаул</a></li>
+						<li><a href="#">Батайск</a></li>
+						<li><a href="#">Белгород</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Б</li>
+						<li><a href="#">Великие Луки</a></li>
+						<li><a href="#">Великий Новгород</a></li>
+						<li><a href="#">Верхняя Пышма</a></li>
+						<li><a href="#">Видное</a></li>
+						<li><a href="#">Владивосток</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Г</li>
+						<li><a href="#">Гатчина</a></li>
+						<li><a href="#">Геленджик</a></li>
+						<li><a href="#">Георгиевск</a></li>
+						<li><a href="#">Глазов</a></li>
+						<li><a href="#">Горно-Алтайск</a></li>
+						<li><a href="#">Грозный</a></li>
+						<li><a href="#">Губкин</a></li>
+						<li><a href="#">Гусь-Хрустальный</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Д</li>
+						<li><a href="#">Дербент</a></li>
+						<li><a href="#">Дзержинск</a></li>
+						<li><a href="#">Димитровград</a></li>
+						<li><a href="#">Дмитров</a></li>
+						<li><a href="#">Долгопрудный</a></li>
+						<li><a href="#">Домодедово</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Е</li>
+						<li><a href="#">Евпатория</a></li>
+						<li><a href="#">Егорьевск</a></li>
+						<li><a href="#">Ейск</a></li>
+						<li><a href="#">Екатеринбург</a></li>
+						<li><a href="#">Елабуга</a></li>
+						<li><a href="#">Ессентуки</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Ж</li>
+						<li><a href="#">Железногорск </a></li>
+						<li><a href="#">Жигулевск</a></li>
+						<li><a href="#">Жуковский</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">З</li>
+						<li><a href="#">Заречный</a></li>
+						<li><a href="#">Зеленогорск</a></li>
+						<li><a href="#">Зеленодольск</a></li>
+						<li><a href="#">Златоуст</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">И</li>
+						<li><a href="#">Иваново</a></li>
+						<li><a href="#">Ивантеевка</a></li>
+						<li><a href="#">Ижевск</a></li>
+						<li><a href="#">Избербаш</a></li>
+						<li><a href="#">Иркутск</a></li>
+						<li><a href="#">Искитим</a></li>
+						<li><a href="#">Ишим</a></li>
+						<li><a href="#">Ишимбай</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">К</li>
+						<li><a href="#">Казань</a></li>
+						<li><a href="#">Калининград</a></li>
+						<li><a href="#">Калуга</a></li>
+						<li><a href="#">Каменск-Уральский</a></li>
+						<li><a href="#">Каменск-Шахтинский</a></li>
+						<li><a href="#">Камышин</a></li>
+						<li><a href="#">Канск</a></li>
+						<li><a href="#">Каспийск</a></li>
+						<li><a href="#">Кемерово</a></li>
+						<li><a href="#">Керчь</a></li>
+						<li><a href="#">Кинешма</a></li>
+						<li><a href="#">Кириши</a></li>
+						<li><a href="#">Киселевск</a></li>
+						<li><a href="#">Кисловодск</a></li>
+						<li><a href="#">Клин</a></li>
+						<li><a href="#">Клинцы</a></li>
+						<li><a href="#">Ковров</a></li>
+						<li><a href="#">Когалым</a></li>
+						<li><a href="#">Коломна</a></li>
+						<li><a href="#">Комсомольск-на-Амуре</a></li>
+						<li><a href="#">Копейск</a></li>
+						<li><a href="#">Королев</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Л</li>
+						<li><a href="#">Лабинск</a></li>
+						<li><a href="#">Лениногорск</a></li>
+						<li><a href="#">Ленинск-Кузнецкий</a></li>
+						<li><a href="#">Лесосибирск</a></li>
+						<li><a href="#">Липецк</a></li>
+						<li><a href="#">Лиски</a></li>
+						<li><a href="#">Лобня</a></li>
+						<li><a href="#">Лысьва</a></li>
+						<li><a href="#">Лыткарино</a></li>
+						<li><a href="#">Люберцы</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">М</li>
+						<li><a href="#">Магадан</a></li>
+						<li><a href="#">Магнитогорск</a></li>
+						<li><a href="#">Майкоп</a></li>
+						<li><a href="#">Махачкала</a></li>
+						<li><a href="#">Междуреченск</a></li>
+						<li><a href="#">Мелеуз</a></li>
+						<li><a href="#">Миасс</a></li>
+						<li><a href="#">Минеральные Воды</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Н</li>
+						<li><a href="#">Новомосковск</a></li>
+						<li><a href="#">Новороссийск</a></li>
+						<li><a href="#">Новосибирск</a></li>
+						<li><a href="#">Новотроицк</a></li>
+						<li><a href="#">Новоуральск</a></li>
+						<li><a href="#">Новочебоксарск</a></li>
+						<li><a href="#">Новочеркасск</a></li>
+						<li><a href="#">Новошахтинск</a></li>
+						<li><a href="#">Новый Уренгой</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Ч</li>
+						<li><a href="#">Челябинск</a></li>
+						<li><a href="#">Черемхово</a></li>
+						<li><a href="#">Череповец</a></li>
+						<li><a href="#">Черкесск</a></li>
+						<li><a href="#">Черногорск</a></li>
+
+						<li class="mb-30"></li>
+
+						<li class="mb-10">Я</li>
+						<li><a href="#">Якутск</a></li>
+						<li><a href="#">Ялта</a></li>
+						<li><a href="#">Ярославль</a></li>
+					</ul>					
+				</div>
+	
+			</div>
+		</div>
+	</div>
+
+	<div class="section-search-top">
+		<h2 class="section-title title-city">Вакансии в вашем <i class="ico ico-map-p"></i><a href="#" id="city-choose">городе</a></h2>
+		<form action="/search/" class="form-search form-search-gray">
+			<input type="search" name="q" placeholder="Поиск по сайту">
+			<button type="submit" name="s"><i class="ico ico-search"></i></button>
+		</form>						
+	</div>
+	<div class="row">
+		<div class="col-md-12 col-lg-3 dropdown-nav">
+			<h4 class="fs-20">Лидер приглашает лучших!</h4>
+			<p>Мы в СОГАЗе твердо верим, что в лидирующей страховой компании на российском рынке должны работать только лучшие из лучших. Мы гордимся командой профессионалов. <br>Если вы готовы присоединится к лидеру рынка, то выберите вакансию из списка по вашему региону.</p>				
+			<ul>
+				<li>
+					<a href="#" class="dropdown-nav-item">Специализации</a>
+					<ul>					
+						<li><a href="#" class="active">Все специализации <i class="ico ico-close"></i></a></li>
+						<li><a href="#"><i class="ico ico-point color-green"></i>Урегулирование убытков <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#"><i class="ico ico-point color-violet"></i>Мониторинг <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#"><i class="ico ico-point color-brown"></i>Маркетинг <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#"><i class="ico ico-point color-red"></i>Агентура <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#"><i class="ico ico-point color-blue"></i>IT-персонал <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#"><i class="ico ico-point color-green-light"></i>Обслуживание <i class="ico ico-close"></i></a><a href="#" class="ico ico-info">i</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#" class="dropdown-nav-item">Требуемый опыт работы</a>
+					<ul>					
+						<li><a href="#">Подраздел</a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#">Подраздел</a><a href="#" class="ico ico-info">i</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#" class="dropdown-nav-item">График работы</a>
+					<ul>					
+						<li><a href="#">Подраздел</a><a href="#" class="ico ico-info">i</a></li>
+						<li><a href="#">Подраздел</a><a href="#" class="ico ico-info">i</a></li>
+					</ul>					
+				</li>
+			</ul>	
+		</div>
+		<div class="col-md-12 col-lg-9 vacancies-item-list">
+			<h4 class="mb-20">Найдено 196 вакансий</h4>	
+			
+			<div class="item-list">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-green">Уригулирование убытков</small></a>
+								<small>Уфа</small>
+							</p>				
+							<h4><a href="#">Начальник Управления поддержки пользователей</a> <span class="new">new</span></h4>								
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов. Высшее образование. Опыт работы в ипотечном страховании...</p>					
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>								
+								<a href="#"><small class="color-violet">Отдел мониторинга</small></a>
+								<small>Нефтекамск</small>
+							</p>
+							<h4><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). продажи страховых продуктов.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-brown">Отдел маркетинга</small></a>		
+								<small>Октябрьский</small>
+							</p>
+							<h4><a href="#">Старший аналитик отчета рекламных данных</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-green">Уригулирование убытков</small></a>
+								<small>Нефтекамск</small>
+							</p>				
+							<h4><a href="#">Начальник Управления поддержки пользователей</a> <span class="new">new</span></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). продажи страховых продуктов.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-violet">Отдел мониторинга</small></a>
+								<small>Уфа</small>
+							</p>
+							<h4><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов. Высшее образование. Опыт работы в ипотечном страховании...</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-brown">Отдел маркетинга</small></a>
+								<small>Октябрьский</small>
+							</p>
+							<h4><a href="#">Старший аналитик отчета рекламных данных</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов.</p>
+						</div>
+					</div>
+				</div>					
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-green">Уригулирование убытков</small></a>
+								<small>Нефтекамск</small>
+							</p>				
+							<h4><a href="#">Начальник Управления поддержки пользователей</a> <span class="new">new</span></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов. Высшее образование. Опыт работы в ипотечном страховании...</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-violet">Отдел мониторинга</small></a>	
+								<small>Уфа</small>
+							</p>
+							<h4><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). продажи страховых продуктов.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-brown">Отдел маркетинга</small></a>		
+								<small>Октябрьский</small>
+							</p>
+							<h4><a href="#">Старший аналитик отчета рекламных данных</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-green">Уригулирование убытков</small></a>
+								<small>Нефтекамск</small>
+							</p>				
+							<h4><a href="#">Начальник Управления поддержки пользователей</a> <span class="new">new</span></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов. Высшее образование. Опыт работы в ипотечном страховании...</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-violet">Отдел мониторинга</small></a>
+								<small>Уфа</small>
+							</p>
+							<h4><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-brown">Отдел маркетинга</small></a>
+								<small>Октябрьский</small>
+							</p>
+							<h4><a href="#">Старший аналитик отчета рекламных данных</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). продажи страховых продуктов.</p>
+						</div>
+					</div>
+				</div>					
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-green">Уригулирование убытков</small></a>
+								<small>Октябрьский</small>
+							</p>				
+							<h4><a href="#">Начальник Управления поддержки пользователей</a> <span class="new">new</span></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов. Высшее образование. Опыт работы в ипотечном страховании...</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-violet">Отдел мониторинга</small></a>
+								<small>Нефтекамск</small>
+							</p>
+							<h4><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). Кросс- продажи страховых продуктов.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="item-list-item">
+							<p>
+								<a href="#"><small class="color-brown">Отдел маркетинга</small></a>		
+								<small>Уфа</small>
+							</p>
+							<h4><a href="#">Старший аналитик отчета рекламных данных</a></h4>
+							<p>Пролонгация договоров страхования (ипотечное страхование в разрезе ПАО "Сбербанк"). продажи страховых продуктов.</p>
+						</div>
+					</div>
+				</div>				
+			</div>		
+			<nav aria-label="Page navigation example">
+				<ul class="pagination pagination-dark justify-content-center">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1"><i class="ico ico-arr-next-blue"></i></a>
+					</li>
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#"><i class="ico ico-arr-next-blue"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>	
+</div>
+
+<div class="container  bg-gray">
+	<div class="row featurette">
+		<div class="featurette-col col-md-6 border-r">
+			<h3 class="featurette-heading">Обратная связь</h3>
+			<p class="lead">Не нашли подходящую вакансию? Направляйте свое резюме на адрес <a href="#">rabota@sogaz.ru</a> или оформите подписку на новые вакансии по вашему профилю</p>
+			<form class="form-style-1">
+				<div class="form-row mb-10">
+					<div class="form-group col-md-6 col-lg-5">
+						<label for="inputEmail">Ваш e-mail</label>
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					</div>
+					<div class="form-group col-md-6 col-lg-5">
+						<label>Ваш профиль</label>
+						<select>
+							<option value="">Все профили</option>
+							<option value="one">Профиль 1</option>
+							<option value="two">Профиль 2</option>
+							<option value="three">Профиль 3</option>
+							<option value="four">Профиль 4</option>
+						</select>
+					</div>
+				</div>	
+				<button type="submit" class="btn btn-primary btn-blue btn-arrow-left"><span>Подписаться</span></button>
+			</form>		
+		</div>
+		<div class="featurette-col col-md-6">
+			<h3 class="featurette-heading">Заявите о себе</h3> 
+			<p class="lead">Мы также предлагаем вам воспользоваться уникальной возможностью заявить о себе: присылайте свои идеи и информацию о себе на электронный адрес <a href="#" class="underline">join@sogaz.ru</a> или заполните   <mark><a href="#" data-toggle="modal" data-target="#feedback-modal">специальную форму</a></mark>   выбрав интересующее вас направление деятельности, и вашу заявку рассмотрит лично Председатель Правления СОГАЗа! А с лучшими кандидатами на финальном этапе отбора проведет индивидуальные личные встречи!</p>
+		</div>
+	</div>
+</div>
+
+<div class="container rating-carousel">
+	<h3>Рейтинги СОГАЗ:</h3>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">					
+				<img src="img/logos/akra.png" width="58" alt="">
+				<p>АКРА присвоило СОГАЗу кредитный рейтинг "ААА(RU)", прогноз стабильный</p>
+			</div>
+			<div class="swiper-slide">					
+				<img src="img/logos/akra.png" width="58" alt="">
+				<p>Слайд 2</p>
+			</div>
+			<div class="swiper-slide">					
+				<img src="img/logos/akra.png" width="58" alt="">
+				<p>Слайд 3</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer container">
+
+	<p class="footer-english">
+		<a href="#">English version</a>	
+	</p>
+	
+	<div class="footer-inner">
+		<div class="footer-text">
+			<p>
+				<span class="copy">© 2018 Страховая Группа «СОГАЗ».</span>
+				<a href="#" class="footer-socials" title="Группа в Вконтакте"><img src="img/icons/vk.svg"></a>
+				<a href="#" class="footer-socials" title="Группа в Facebook"><img src="img/icons/fb.svg"></a>
+				<a href="#" class="footer-socials" title="Группа в Twitter"><img src="img/icons/tw.svg"></a>
+			</p>
+
+			<p>Все права сохранены Информация, размещенная на настоящем интернет сайте,  не является публичной офертой, установленной в п. 2 ст. 437 ГК РФ. </p>
+			<p>Страница изменена: 05.02.2017 17:46 </p>
+		</div>
+
+		<div class="footer-phones">
+			<ul>
+				<li><a href="tel:+88003330888">8 800 333 08 88</a> Единый контактный центр</li>
+				<li><a href="tel:+88003334419">8 800 333 44 19</a> Для обращения застрахованных по ДМС</li>
+				<li><a href="tel:+88003330808">8 800 333 08 08</a> Горячая линия по качеству</li>
+			</ul>
+		</div>
+
+		<div class="footer-site">
+			<p>Сайт создан <br> <a href="http://www.webway.ru/" target="_blank">Webway</a></p>
+		</div>
+	</div>	
+</footer>
+
+<div class="burger container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="sidebar-left">
+				<ul class="sidebar-left-nav">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Студентам</a></li>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Истории успеха</a></li>
+				</ul>
+				<a href="#">www.sogaz.ru</a>					
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="burger-body">
+				<h3 class="title-city">Вакансии в <i class="ico ico-map-p"></i><a href="#">Москве</a></h3>
+
+				<h4 class="burger-menu-title">Отдел маркетинга</h4>
+				<ul class="burger-menu-list">
+					<li><a href="#">Начальник Управления поддержки пользователей</a></li>
+					<li><a href="#">Старший аналитик отчета рекламных данных</a></li>
+					<li><a href="#">Начальник Управления поддержки пользователей</a></li>
+					<li><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></li>
+					<li><a href="#">Старший аналитик отчета рекламных данных</a></li>
+				</ul>
+
+				<h4 class="burger-menu-title">Отдел мониторинга</h4>
+				<ul class="burger-menu-list">
+					<li><a href="#">Старший аналитик отдела</a></li>
+					<li><a href="#">Начальник Департамента отдела мониторинга</a></li>
+				</ul>
+
+				<h4 class="burger-menu-title">Урегулирование убытков</h4>
+				<ul class="burger-menu-list">
+					<li><a href="#">Начальник Управления поддержки пользователей</a></li>
+					<li><a href="#">Старший аналитик отчета рекламных данных</a></li>
+					<li><a href="#">Старший аналитик</a></li>
+					<li><a href="#">Начальник Управления поддержки пользователей</a></li>
+					<li><a href="#">Управляющий мониторинговой службы</a></li>
+					<li><a href="#">Начальник мониторинговой службы по экстренным случаям на дороге</a></li>
+					<li><a href="#">Старший аналитик отчета рекламных данных</a></li>
+					<li><a href="#">Аналитик отчета урегулирования данных</a></li>
+				</ul>					
+
+				<a href="#" class="link-all">Смотреть все вакансии</a>					
+			</div>
+
+		</div>
+	</div>
+</div>    
+
+<!-- Modal -->
+<div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<i class="ico ico-close-black"></i>
+			</button>
+			<h3 class="modal-title" id="ModalLabel">Заявите о себе</h3>
+			<p class="modal-sub-title">Обращение к HR</p>
+			<form>
+				<div class="form-group">
+					<label for="name" class="col-form-label">Имя</label>
+					<input type="text" id="name" class="form-control" placeholder="">
+				</div>
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label for="phone" class="col-form-label">Телефон</label>
+							<input type="tel" id="phone" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="email" class="col-form-label">Эл. почта</label>
+							<input type="email" id="email" class="form-control" placeholder="">
+							<p><small>Сюда мы пришлем вашу переписку со службой поддержки</small></p>
+						</div>
+					</div>
+				</div>				
+				<div class="form-group">
+					<label for="disabledSelect">Тема обращения</label>
+					<select id="disabledSelect" class="form-control">
+						<option>Не выбрана</option>
+						<option>Тема 1</option>
+					</select>
+				</div>					
+				<div class="form-group">
+					<label for="message-text" class="col-form-label">Текст обращения</label>
+					<textarea class="form-control" id="message-text"></textarea>
+				</div>
+
+				<div class="upload-drop-zone" id="drop-zone">
+					<div id="js-upload-form">
+						<input type="file" name="files[]" id="js-upload-files" multiple>
+						<span class="upload-link"><i class="ico ico-file"></i></span>
+					</div>
+					<p>Чтобы прикрепить файл перетащите его в эту область страницы или выберите на своем компьютере... <br>
+					Не более 50 МБ на один файл</p>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="FieldsetCheck">
+					<label class="form-check-label" for="FieldsetCheck">
+						Я даю свое согласие на обработку персональных данных, соглашаюсь с условиями пользовательского соглашения и соглашения об электронном взаимодействии
+					</label>
+				</div>		
+				<div class="modal-form-bottom">
+					<input type="reset" class="link-reset" value="Сбросить">
+					<button type="submit" class="btn btn-primary btn-blue btn-arrow-left"><span>Отправить</span></button>					
+				</div>					
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<!-- overlay -->
+<div class="overlay"></div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js?4"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
